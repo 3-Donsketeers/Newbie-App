@@ -26,7 +26,7 @@ export default function Navigation() {
           <NavLink href="/">Contact Us</NavLink>
           <NavBtn> 
             <NavBtnLink href="/about">
-              Sign Up
+              <b>Sign Up</b>
             </NavBtnLink>
           </NavBtn>
         </Nav>
