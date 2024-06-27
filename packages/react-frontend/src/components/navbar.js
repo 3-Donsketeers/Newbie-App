@@ -7,18 +7,23 @@ import { Link } from "wouter";
 import { NavLink, NavBtn, NavBtnLink } from "./NavbarElements.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import "../styles/styles.css";
+
+import '../styles/customnav.css';
+
+
 export default function Navigation() {
   return (
-    <Navbar bg="dark" data-bs-theme="dark" fixed="top">
+    <Navbar className="custom-navbar" expand="lg" fixed="top">
       <Container>
         <Navbar.Brand as={Link} href="/" style={{ color: '#ffffff !important'}}>
-          USDA Newbie App
+          <b>USDA Newbie App</b>
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end"></Navbar.Collapse>
         <Nav className="me-auto">
           <NavLink href="/about">About</NavLink>
-          <NavLink href="/">Home</NavLink>
+          <NavLink href="/">Contact Us</NavLink>
           <NavBtn> 
             <NavBtnLink href="/about">
               Sign Up
