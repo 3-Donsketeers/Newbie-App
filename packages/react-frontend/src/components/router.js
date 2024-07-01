@@ -3,7 +3,7 @@ import { Switch, Route, Router } from "wouter";
 import Home from "../pages/home";
 import About from "../pages/about";
 import Test from "../pages/test"
-import Home2 from "../pages/home2"
+import Contact from "../pages/contact.js"
 
 /**
 * The router is imported in app.jsx
@@ -17,6 +17,7 @@ export default () => (
     <Switch>
       <Route path="/" component={Test} />
       <Route path="/test" component={Test} />
-      <Route path="/contact" component={Test} />
+      <Route path="/contact" component={Contact} />
+      <Route path="/about" component={About} />
     </Switch>
 );
