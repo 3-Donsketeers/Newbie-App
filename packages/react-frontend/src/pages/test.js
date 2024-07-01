@@ -52,10 +52,15 @@ const BottomGridItem = styled.div`
 
 const TextBox = styled.div`
   background-color: #fff;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 10px;
-  border-radius: 4px;
-  outline: 1px solid #A0A0A0;
+  display: flex;
+  justify-content: space-between; /* Adjust alignment as needed */
+`;
+
+const TextBlock = styled.div`
+  margin: 0 5px; /* Adjust margin between text blocks as needed */
+  font-size: 16px;
 `;
 
 const Text = styled.p`
@@ -75,6 +80,8 @@ width: 100vw; */
     display: none;
   }
 `;
+
+
 
 const BtnLink = styled(Link)`
   border-radius: 4px;
@@ -105,15 +112,22 @@ export default function Test() {
         <TextBox>
           <Text>
             <p><h4><b>FAQ</b></h4></p>
-            <p>How do I set up my PIV Card?</p>
-            <p>Where can I find my mandatory training courses?</p>
-            <p>How do I fill out my timesheets?</p>
-            <p>Where can I find my SF-50?</p>
-            <p>etc.</p>
+              <ul>
+                  <li>First item</li>
+                  <li>Second item</li>
+                  <li>Third item</li>
+                  <li>First item</li>
+                  <li>Second item</li>
+                  <li>Third item</li>
+                  <li>First item</li>
+                  <li>Second item</li>
+                  <li>Third item</li>
+              </ul>
+            <p></p>
           </Text>
         </TextBox>
         <Button> 
-            <BtnLink href="/about">
+            <BtnLink href="/faq">
               <b>Show More</b>
             </BtnLink>
         </Button>
@@ -122,29 +136,32 @@ export default function Test() {
         <TextBox>
           <Text>
             <p><h4><b>USDA Agencies &amp; Mission Areas</b></h4></p>
-            <p>OCIO - blahblahblahbl</p> 
-            <p>DISC -blahblahblahbl</p>
-            <p>CEC - blahblahblahbl</p>
-            <p>FSIS - blahblahblahbl</p>
+            <ul>
+                  <li>First item</li>
+                  <li>Second item</li>
+                  <li>Third item</li>
+                  <li>First item</li>
+                  <li>Second item</li>
+                  <li>Third item</li>
+                  
+              </ul>
           </Text>
         </TextBox>
         <Button> 
-            <BtnLink href="/about">
+            <BtnLink href="/agencies">
               <b>Show More</b>
             </BtnLink>
         </Button>
       </RightGridItem>
       <BottomGridItem>
+      <p><h4><b>Getting Started</b></h4></p>
         <TextBox>
-          <Text>
-            <p><h4><b>Steps for Getting Started</b></h4></p>
-            <p>Fill out this Form X and do Y</p>
-            <p>Talk to John Smith to get X</p>
-            <p>blah blah blah more stuff</p>
-          </Text>
+          <TextBlock>Text Block 1</TextBlock>
+          <TextBlock>Text Block 2</TextBlock>
+          <TextBlock>Text Block 3</TextBlock>
         </TextBox>
         <Button> 
-            <BtnLink href="/about">
+            <BtnLink href="/getting_started">
               <b>Show More</b>
             </BtnLink>
         </Button>
