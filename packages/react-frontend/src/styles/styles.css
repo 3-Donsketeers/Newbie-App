@@ -1,76 +1,38 @@
 
-  /* Import fonts */
-  /* <uniquifier>: Use a unique and descriptive class name
-   <weight>: Use a value from 100 to 900*/
+/* Basic Page Structure */
+body {
+  background-color: #003082;
+  margin: 0;
+  padding: 0;
+  padding-top: 120px; /* Adjust based on navbar height */
+}
 
-  
-  /*@font-face {
-    font-family: Public Sans;
-    font-weight: bold;
-    src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-      format("opentype");
-  }*/
-  
-  ***************************************************************/
-  
-  /* Page structure */
-  body {
-    background-color: var(#003082);
-    font-family: "Public Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400; /* Or choose another weight as needed */
-    font-style: normal;
-  }
-  .wrapper {
-    min-height: var(--wrapper-height);
-    display: grid;
-    place-items: center;
-    margin: 0 1rem;
-    min-height: 86vh;
-  }
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .public-sans {
-    font-family: "Public Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-  }
-  .public-sans-bold {
-    font-family: "Public Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-  }
-  
-  /* Page titles */
-  h1 {
-    color: #2800FF;
-    font-family: Public Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 100px;
-    line-height: 105%;
-  }
-  .page h1 {
-    font-size: 48px;
-  }
-  
-  .page p {
-    line-height: 1.5;
-  }
-  
-  .page a {
-    color: #000;
-  }
-  
-  .page a:hover {
-    text-decoration: none;
-  }
-  
+.page {
+  padding: 1rem;
+}
 
-  
+.page h1 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.page p {
+  line-height: 1.5;
+  text-align: left;
+  text-indent: 30px;
+}
+
+.public-sans {
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.public-sans-bold {
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}

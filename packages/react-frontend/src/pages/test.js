@@ -32,7 +32,7 @@ const LeftGridItem = styled.div`
 `;
 
 const RightGridItem = styled.div`
-  padding: 30px;
+  padding: 20px;
   height: 70vh;
   background-color: #fff;
   grid-column: 2;

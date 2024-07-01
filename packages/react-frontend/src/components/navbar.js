@@ -16,14 +16,14 @@ export default function Navigation() {
   return (
     <Navbar className="custom-navbar" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand as={Link} href="/" style={{ color: '#ffffff !important'}}>
-          <b>USDA Newbie App</b>
+        <Navbar.Brand as={Link} href="/" style={{ color: '#ffffff !important'}} className="public-sans">
+          USDA Newbie App
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end"></Navbar.Collapse>
-        <Nav className="me-auto">
+        <Nav className="me-auto public-sans">
           <NavLink href="/about">About</NavLink>
-          <NavLink href="/">Contact Us</NavLink>
+          <NavLink href="/contact">Contact Us</NavLink>
           <NavBtn> 
             <NavBtnLink href="/about">
               <b>Sign Up</b>
