@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Switch, Route, Router } from "wouter";
 import About from "../pages/about";
-import Test from "../pages/test";
+import Home from "../pages/home.js";
 import Contact from "../pages/contact.js";
 import FAQ from "../pages/faq.js";
 import Started from "../pages/getting_started.js";
@@ -18,12 +18,12 @@ import Landing from "../pages/landing.js"
 
 export default () => (
     <Switch>
-      <Route path="/" component={Test} />
+      <Route path="/home" component={Home} />
       <Route path="/contact" component={Contact} />
       <Route path="/about" component={About} />
       <Route path="/faq" component={FAQ} />
       <Route path="/agencies" component={Agencies} />
       <Route path="/getting_started" component={Started} />
-      <Route path="/landing" component={Landing} />
+      <Route path="/" component={Landing} />
     </Switch>
 );
