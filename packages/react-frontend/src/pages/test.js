@@ -10,7 +10,7 @@ const MainGridContainer = styled.div`
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto 1fr auto;
   gap: 20px; /* Adjust gap between items */
-  margin: 40px; /* Margin around the grid */
+  margin: 20px; /* Margin around the grid */
   width: calc(100% - 40px); /* Full width minus margin */
   position: absolute;
   top: 120px;
@@ -48,6 +48,7 @@ const BottomGridItem = styled.div`
   grid-row: 3;
   border-radius: 17px;
   outline: 1px solid #000;
+  margin-bottom: 40px; /* Add margin-bottom for spacing */
 `;
 
 const TextBox = styled.div`
@@ -56,9 +57,11 @@ const TextBox = styled.div`
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between; /* Adjust alignment as needed */
+  border-radius: 10px; /* Beveled edges */
+  outline: 1px solid #a1a1a1; /* Outline */
 `;
 
-const TextBlock = styled.div`
+const TextBlock = styled.p`
   margin: 0 5px; /* Adjust margin between text blocks as needed */
   font-size: 16px;
 `;
@@ -109,9 +112,9 @@ export default function Test() {
         <Navigation />
       </NavigationWrapper>
       <LeftGridItem>
+        <p><h4><b>FAQ</b></h4></p>
         <TextBox>
           <Text>
-            <p><h4><b>FAQ</b></h4></p>
               <ul>
                   <li>First item</li>
                   <li>Second item</li>
@@ -133,9 +136,9 @@ export default function Test() {
         </Button>
       </LeftGridItem>
       <RightGridItem>
+        <p><h4><b>USDA Agencies &amp; Mission Areas</b></h4></p>
         <TextBox>
-          <Text>
-            <p><h4><b>USDA Agencies &amp; Mission Areas</b></h4></p>
+          <Text> 
             <ul>
                   <li>First item</li>
                   <li>Second item</li>
@@ -156,9 +159,39 @@ export default function Test() {
       <BottomGridItem>
       <p><h4><b>Getting Started</b></h4></p>
         <TextBox>
-          <TextBlock>Text Block 1</TextBlock>
-          <TextBlock>Text Block 2</TextBlock>
-          <TextBlock>Text Block 3</TextBlock>
+          <TextBlock>
+            <p><b>Forms etc.</b></p>
+            <ul>
+              <li>First item</li>
+              <li>Second item</li>
+              <li>Third item</li>
+            </ul>
+          </TextBlock>
+          <TextBlock>
+            <p><b>One Topic</b></p>
+            <ul>
+              <li>First item</li>
+              <li>Second item</li>
+              <li>Third item</li>
+            </ul>
+            
+          </TextBlock>
+          <TextBlock>
+            <p><b>Another Topic</b></p>
+            <ul>
+              <li>First item</li>
+              <li>Second item</li>
+              <li>Third item</li>
+            </ul>
+          </TextBlock>
+          <TextBlock>
+            <p><b>Yet Another Topic</b></p>
+            <ul>
+              <li>First item</li>
+              <li>Second item</li>
+              <li>Third item</li>
+            </ul>
+          </TextBlock>
         </TextBox>
         <Button> 
             <BtnLink href="/getting_started">
