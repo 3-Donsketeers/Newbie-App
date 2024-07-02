@@ -2,12 +2,12 @@ import React from "react";
 import Navigation from "../components/navbar.js";
 import "../styles/styles.css";
 
-export default function FAQ() {
+export default function Agencies() {
   return (
     <>
       <Navigation />
       <div className="page public-sans">
-        <h1>FAQ</h1>
+        <h1>USDA Agencies & Mission Areas</h1>
         <p> 
             <ul>
                 <li>First item</li>

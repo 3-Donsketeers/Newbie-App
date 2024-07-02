@@ -10,7 +10,7 @@ const MainGridContainer = styled.div`
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto 1fr auto;
   gap: 20px; /* Adjust gap between items */
-  margin: 40px; /* Margin around the grid */
+  margin: 20px; /* Margin around the grid */
   width: calc(100% - 40px); /* Full width minus margin */
   position: absolute;
   top: 120px;
@@ -48,14 +48,22 @@ const BottomGridItem = styled.div`
   grid-row: 3;
   border-radius: 17px;
   outline: 1px solid #000;
+  margin-bottom: 40px; /* Add margin-bottom for spacing */
 `;
 
 const TextBox = styled.div`
   background-color: #fff;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 10px;
-  border-radius: 4px;
-  outline: 1px solid #A0A0A0;
+  display: flex;
+  justify-content: space-between; /* Adjust alignment as needed */
+  border-radius: 10px; /* Beveled edges */
+  outline: 1px solid #a1a1a1; /* Outline */
+`;
+
+const TextBlock = styled.p`
+  margin: 0 5px; /* Adjust margin between text blocks as needed */
+  font-size: 16px;
 `;
 
 const Text = styled.p`
@@ -75,6 +83,8 @@ width: 100vw; */
     display: none;
   }
 `;
+
+
 
 const BtnLink = styled(Link)`
   border-radius: 4px;
@@ -102,49 +112,89 @@ export default function Test() {
         <Navigation />
       </NavigationWrapper>
       <LeftGridItem>
+        <p><h4><b>FAQ</b></h4></p>
         <TextBox>
           <Text>
-            <p><h4><b>FAQ</b></h4></p>
-            <p>How do I set up my PIV Card?</p>
-            <p>Where can I find my mandatory training courses?</p>
-            <p>How do I fill out my timesheets?</p>
-            <p>Where can I find my SF-50?</p>
-            <p>etc.</p>
+              <ul>
+                  <li>First item</li>
+                  <li>Second item</li>
+                  <li>Third item</li>
+                  <li>First item</li>
+                  <li>Second item</li>
+                  <li>Third item</li>
+                  <li>First item</li>
+                  <li>Second item</li>
+                  <li>Third item</li>
+              </ul>
+            <p></p>
           </Text>
         </TextBox>
         <Button> 
-            <BtnLink href="/about">
+            <BtnLink href="/faq">
               <b>Show More</b>
             </BtnLink>
         </Button>
       </LeftGridItem>
       <RightGridItem>
+        <p><h4><b>USDA Agencies &amp; Mission Areas</b></h4></p>
         <TextBox>
-          <Text>
-            <p><h4><b>USDA Agencies &amp; Mission Areas</b></h4></p>
-            <p>OCIO - blahblahblahbl</p> 
-            <p>DISC -blahblahblahbl</p>
-            <p>CEC - blahblahblahbl</p>
-            <p>FSIS - blahblahblahbl</p>
+          <Text> 
+            <ul>
+                  <li>First item</li>
+                  <li>Second item</li>
+                  <li>Third item</li>
+                  <li>First item</li>
+                  <li>Second item</li>
+                  <li>Third item</li>
+                  
+              </ul>
           </Text>
         </TextBox>
         <Button> 
-            <BtnLink href="/about">
+            <BtnLink href="/agencies">
               <b>Show More</b>
             </BtnLink>
         </Button>
       </RightGridItem>
       <BottomGridItem>
+      <p><h4><b>Getting Started</b></h4></p>
         <TextBox>
-          <Text>
-            <p><h4><b>Steps for Getting Started</b></h4></p>
-            <p>Fill out this Form X and do Y</p>
-            <p>Talk to John Smith to get X</p>
-            <p>blah blah blah more stuff</p>
-          </Text>
+          <TextBlock>
+            <p><b>Forms etc.</b></p>
+            <ul>
+              <li>First item</li>
+              <li>Second item</li>
+              <li>Third item</li>
+            </ul>
+          </TextBlock>
+          <TextBlock>
+            <p><b>One Topic</b></p>
+            <ul>
+              <li>First item</li>
+              <li>Second item</li>
+              <li>Third item</li>
+            </ul>
+            
+          </TextBlock>
+          <TextBlock>
+            <p><b>Another Topic</b></p>
+            <ul>
+              <li>First item</li>
+              <li>Second item</li>
+              <li>Third item</li>
+            </ul>
+          </TextBlock>
+          <TextBlock>
+            <p><b>Yet Another Topic</b></p>
+            <ul>
+              <li>First item</li>
+              <li>Second item</li>
+              <li>Third item</li>
+            </ul>
+          </TextBlock>
         </TextBox>
         <Button> 
-            <BtnLink href="/about">
+            <BtnLink href="/getting_started">
               <b>Show More</b>
             </BtnLink>
         </Button>
