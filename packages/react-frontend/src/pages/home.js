@@ -2,7 +2,6 @@ import * as React from "react";
 import Navigation from "../components/navbar.js";
 import styled from "styled-components";
 import "../styles/styles.css";
-//import "../styles/teststyle.css";
 import { Link } from "wouter";
 
 const MainGridContainer = styled.div`
@@ -105,7 +104,7 @@ const BtnLink = styled(Link)`
   }
 `;
 
-export default function Test() {
+export default function Home() {
   return (
     <MainGridContainer className="public-sans">
       <NavigationWrapper>

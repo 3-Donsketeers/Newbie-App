@@ -16,7 +16,7 @@ export default function Navigation() {
   return (
     <Navbar className="custom-navbar" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand as={Link} href="/landing" style={{ color: '#ffffff !important'}} className="public-sans">
+        <Navbar.Brand as={Link} href="/" style={{ color: '#ffffff !important'}} className="public-sans">
           USDA Newbie App
         </Navbar.Brand>
         <Navbar.Toggle />
@@ -25,7 +25,7 @@ export default function Navigation() {
           <NavLink href="/about">About</NavLink>
           <NavLink href="/contact">Contact Us</NavLink>
           <NavBtn> 
-            <NavBtnLink href="/">
+            <NavBtnLink href="/home">
               <b>Home</b>
             </NavBtnLink>
           </NavBtn>
