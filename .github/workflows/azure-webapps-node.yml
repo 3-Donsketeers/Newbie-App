@@ -23,9 +23,9 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_WEBAPP_NAME: oci1201-2024hackathon1-webapp    # set this to your application's name
-  AZURE_WEBAPP_PACKAGE_PATH: 'packages/react-frontend'      # set this to the path to your web app project, defaults to the repository root
-  NODE_VERSION: '20.x'                # set this to the node version to use
+  AZURE_WEBAPP_NAME: your-app-name                    # set this to your application's name
+  AZURE_WEBAPP_PACKAGE_PATH: 'packages/react-frontend'  # path to your web app project
+  NODE_VERSION: '20.x'                                # set this to the node version to use
 
 permissions:
   contents: read
@@ -44,6 +44,7 @@ jobs:
 
     - name: npm install, build, and test
       run: |
+        cd ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
         npm install
         npm run build --if-present
         npm run test --if-present
@@ -52,7 +53,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: node-app
-        path: .
+        path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
   deploy:
     permissions:
@@ -68,6 +69,7 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: node-app
+        path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
     - name: 'Deploy to Azure WebApp'
       id: deploy-to-webapp
