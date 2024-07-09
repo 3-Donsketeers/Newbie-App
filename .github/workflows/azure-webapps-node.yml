@@ -43,6 +43,14 @@ jobs:
         cache: 'npm'
         cache-dependency-path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/package-lock.json
 
+    - name: Cache node modules
+      uses: actions/cache@v3
+      with:
+        path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
     - name: npm install, build, and test
       run: |
         cd ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
