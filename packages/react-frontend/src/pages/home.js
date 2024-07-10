@@ -6,7 +6,7 @@ import { Link } from "wouter";
 
 const MainGridContainer = styled.div`
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: auto 1fr auto;
   gap: 20px; /* Adjust gap between items */
   margin: 20px; /* Margin around the grid */
@@ -23,7 +23,7 @@ const NavigationWrapper = styled.div`
 const LeftGridItem = styled.div`
   padding: 20px;
   background-color: #fff;
-  grid-column: 1;
+  grid-column: 1 / span 2;
   grid-row: 2;
   height: 70vh;
   border-radius: 17px;
@@ -34,7 +34,7 @@ const RightGridItem = styled.div`
   padding: 20px;
   height: 70vh;
   background-color: #fff;
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 2;
   border-radius: 17px;
   outline: 1px solid #000;
@@ -43,7 +43,17 @@ const RightGridItem = styled.div`
 const BottomGridItem = styled.div`
   padding: 20px;
   background-color: #fff;
-  grid-column: 1 / span 2; /* Spanning across two columns */
+  grid-column: 1;
+  grid-row: 3;
+  border-radius: 17px;
+  outline: 1px solid #000;
+  margin-bottom: 40px; /* Add margin-bottom for spacing */
+`;
+
+const BottomRightGridItem = styled.div`
+  padding: 20px;
+  background-color: #fff;
+  grid-column: 2 / span 2; /* Spanning across two columns */
   grid-row: 3;
   border-radius: 17px;
   outline: 1px solid #000;
@@ -198,6 +208,27 @@ export default function Home() {
             </BtnLink>
         </Button>
       </BottomGridItem>
+      <BottomRightGridItem>
+        <p><h4><b>USDA Agencies &amp; Mission Areas</b></h4></p>
+        <TextBox>
+          <Text> 
+            <ul>
+                  <li>First item</li>
+                  <li>Second item</li>
+                  <li>Third item</li>
+                  <li>First item</li>
+                  <li>Second item</li>
+                  <li>Third item</li>
+                  
+              </ul>
+          </Text>
+        </TextBox>
+        <Button> 
+            <BtnLink href="/agencies">
+              <b>Show More</b>
+            </BtnLink>
+        </Button>
+      </BottomRightGridItem>
     </MainGridContainer>
   );
 }
