@@ -25,7 +25,6 @@ const LeftGridItem = styled.div`
   background-color: #fff;
   grid-column: 1 / span 2;
   grid-row: 2;
-  height: 70vh;
   border-radius: 17px;
   outline: 1px solid #000;
 `;
@@ -125,15 +124,26 @@ export default function Home() {
         <TextBox>
           <Text>
               <ul>
-                  <li>First item</li>
-                  <li>Second item</li>
-                  <li>Third item</li>
-                  <li>First item</li>
-                  <li>Second item</li>
-                  <li>Third item</li>
-                  <li>First item</li>
-                  <li>Second item</li>
-                  <li>Third item</li>
+                <li>How do I set up my PIV Card?</li>
+                <ul>
+                  <li>You will receive an email with instructions to make an appointment at your local office to get your picture taken and later eceive your PIV card. This process may take time, so please be sure to renew your LinkPass exemption until you have your PIV Card.</li>
+                </ul>
+
+                <li>Where can I find my mandatory training courses?</li>
+                <ul>
+                  <li>Mandatory training courses may be found in AgLearn at the bottom of the page.</li>
+                </ul>
+
+                <li>How do I fill out my timesheets?</li>
+                  <ul>
+                    <li> log into WebTA through your preferred method and click the Timesheets button.</li>
+                  </ul>
+
+                <li>Where can I find my SF-50?</li>
+                  <ul>
+                    <li>Your SF-50 can be found in your HR Portal.</li>
+                  </ul>
+
               </ul>
             <p></p>
           </Text>
@@ -149,12 +159,11 @@ export default function Home() {
         <TextBox>
           <Text> 
             <ul>
-                  <li>First item</li>
-                  <li>Second item</li>
-                  <li>Third item</li>
-                  <li>First item</li>
-                  <li>Second item</li>
-                  <li>Third item</li>
+              <li>Agricultural Research Service (ARS)</li>
+              <ul><li>ARS is USDA's principal in-house research agency. ARS leads America towards a better future through agricultural research and information...</li></ul>  
+
+              
+
                   
               </ul>
           </Text>
@@ -169,36 +178,18 @@ export default function Home() {
       <p><h4><b>Getting Started</b></h4></p>
         <TextBox>
           <TextBlock>
-            <p><b>Forms etc.</b></p>
+            <p><b>Forms</b></p>
             <ul>
-              <li>First item</li>
-              <li>Second item</li>
-              <li>Third item</li>
+              <li>Be sure to contact HR to ensure all forms for remote work are filled out.</li>
+              <li>Find necessary forms on your HR Portal</li>
             </ul>
           </TextBlock>
           <TextBlock>
-            <p><b>One Topic</b></p>
+            <p><b>WebTA</b></p>
             <ul>
-              <li>First item</li>
-              <li>Second item</li>
-              <li>Third item</li>
-            </ul>
-            
-          </TextBlock>
-          <TextBlock>
-            <p><b>Another Topic</b></p>
-            <ul>
-              <li>First item</li>
-              <li>Second item</li>
-              <li>Third item</li>
-            </ul>
-          </TextBlock>
-          <TextBlock>
-            <p><b>Yet Another Topic</b></p>
-            <ul>
-              <li>First item</li>
-              <li>Second item</li>
-              <li>Third item</li>
+              <li>Requires LinkPass or Temporary LinkPass</li>
+              <li>Fill out timesheets by the end of each pay period.</li>
+              <li>Use WebTA to submit leave requests and sick leave.</li>
             </ul>
           </TextBlock>
         </TextBox>
@@ -209,22 +200,18 @@ export default function Home() {
         </Button>
       </BottomGridItem>
       <BottomRightGridItem>
-        <p><h4><b>USDA Agencies &amp; Mission Areas</b></h4></p>
+        <p><h4><b>Quick Access</b></h4></p>
         <TextBox>
           <Text> 
             <ul>
-                  <li>First item</li>
-                  <li>Second item</li>
-                  <li>Third item</li>
-                  <li>First item</li>
-                  <li>Second item</li>
-                  <li>Third item</li>
+                  <li><a href="https://www.usda.gov/">USDA Site</a></li>
+                  <li><a href="https://make.gov.powerapps.us/">Microsoft PowerApps</a></li>
                   
               </ul>
           </Text>
         </TextBox>
         <Button> 
-            <BtnLink href="/agencies">
+            <BtnLink href="/quick">
               <b>Show More</b>
             </BtnLink>
         </Button>

@@ -7,6 +7,7 @@ import FAQ from "../pages/faq.js";
 import Started from "../pages/getting_started.js";
 import Agencies from "../pages/agencies.js";
 import Landing from "../pages/landing.js"
+import Quick from "../pages/quick_access.js"
 
 /**
 * The router is imported in app.jsx
@@ -24,6 +25,7 @@ export default () => (
       <Route path="/faq" component={FAQ} />
       <Route path="/agencies" component={Agencies} />
       <Route path="/getting_started" component={Started} />
+      <Route path="/quick" component={Quick} />
       <Route path="/" component={Landing} />
     </Switch>
 );

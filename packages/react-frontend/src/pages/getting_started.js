@@ -76,72 +76,53 @@ export default function Started() {
         <Navigation />
       </NavigationWrapper>
       <FirstGridItem>
-        <p><h4><b>Section 1</b></h4></p>
+        <p><h4><b>Forms</b></h4></p>
         <TextBox>
           <Text>
-              <ul>
-                  <li>First item</li>
-                  <li>Second item</li>
-                  <li>Third item</li>
-                  <li>First item</li>
-                  <li>Second item</li>
-                  <li>Third item</li>
-                  <li>First item</li>
-                  <li>Second item</li>
-                  <li>Third item</li>
-              </ul>
-            <p></p>
+            <ul>
+              <li>Be sure to contact HR to ensure all forms for remote work are filled out.</li>
+              <li>Find necessary forms on your HR Portal</li>
+            </ul>
           </Text>
         </TextBox>
       </FirstGridItem>
       <SecondGridItem>
-        <p><h4><b>Section 2</b></h4></p>
+        <p><h4><b>WebTA</b></h4></p>
         <TextBox>
           <Text> 
             <ul>
-                  <li>First item</li>
-                  <li>Second item</li>
-                  <li>Third item</li>
-                  <li>First item</li>
-                  <li>Second item</li>
-                  <li>Third item</li>
-                  
-              </ul>
+              <li>Requires LinkPass or Temporary LinkPass</li>
+              <li>Fill out timesheets by the end of each pay period.</li>
+              <li>Use WebTA to submit leave requests and sick leave.</li>
+            </ul>
           </Text>
         </TextBox>
       </SecondGridItem>
       <ThirdGridItem>
-      <p><h4><b>Section 3</b></h4></p>
+        <p><h4><b>AgLearn</b></h4></p>
         <TextBox>
-            <Text> 
-                <ul>
-                    <li>First item</li>
-                    <li>Second item</li>
-                    <li>Third item</li>
-                    <li>First item</li>
-                    <li>Second item</li>
-                    <li>Third item</li>
-                  
-                </ul>
+          <Text> 
+            <ul>
+              <li>Find mandatory and optional trainings here.</li>
+              <li>Required trainings can be found at the bottom of the page.</li>
+              <li>Search for possible useful tutorials through the search bar at the top of the screen.</li>
+            </ul>
           </Text>
         </TextBox>
       </ThirdGridItem>
       <FourthGridItem>
-      <p><h4><b>Section 4</b></h4></p>
+        <p><h4><b>PIV Card</b></h4></p>
         <TextBox>
-            <Text> 
-                <ul>
-                    <li>First item</li>
-                    <li>Second item</li>
-                    <li>Third item</li>
-                    <li>First item</li>
-                    <li>Second item</li>
-                    <li>Third item</li>
-                  
-                </ul>
+          <Text> 
+            <ul>
+            <li>You will receive an email with instructions to make an appointment at your local office to get your picture taken and later eceive your PIV card. This process may take time, so please be sure to renew your LinkPass exemption until you have your PIV Card.</li>
+            <li>Several funcitons will be inaccessible while in the process of getting your PIV card. Please coordinate with your team during this process.</li>
+            <li>Contact the CEC help desk through the Help icon on your Desktop for any issues or questions regarding your PIV Card.</li>
+            </ul>
           </Text>
         </TextBox>
       </FourthGridItem>
+      
     </MainGridContainer>
   );
 }
